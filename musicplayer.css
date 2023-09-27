@@ -1,0 +1,115 @@
+audio  {
+  background: transparent;
+
+  position: absolute;
+    top: 10px;
+    right: -1000px;
+    bottom: 90px;
+    left: 1200px;
+    width: 300px;
+    height: 100;
+  border-radius: 3px;
+  background-image:transparent 
+ background-color: transparent;
+border-radius: 8px;
+
+
+}
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 10px solid;
+}
+
+.rainbow {
+    text-decoration: underline;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #ff0000, #ff00a2 , #2b00ff, #339cff, #00ff40);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 2s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+audio {
+  animation: gradient-animation 1s infinite linear;
+  width: 110px; /* Örnek bir genişlik değeri */
+  height: 50px;/* Örnek bir yükseklik değeri */
+
+  border-radius: 5; /* Yuvarlak şekil için %50 border-radius kullanılır */  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #1000ff;
+  border: 1100x solid transparent; /* Eklediğimiz sınırlar */
+}
+
+@keyframes gradient-animation {
+  0% {
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #1000ff;
+  }
+  25% {
+    box-shadow: 20px 20px 60px #ff0000, -20px -20px 60px #00ff00;
+  }
+  50% {
+    box-shadow: 20px 20px 60px #ffff00, -20px -20px 60px #ff00ff;
+  }
+  75% {
+    box-shadow: 20px 20px 60px #00ffff, -20px -20px 60px #0000ff;
+  }
+  100% {
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #1000ff;
+  }
+}
+
+5
+
+
+.rainbow-hover {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff7576;
+  background-color: #2B3044;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  line-height: 24px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px #2B3044,
+    0px 4px 16px #2B3044;
+  transform-style: preserve-3d;
+  transform: scale(var(--s, 1)) perspective(600px)
+    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  perspective: 600px;
+  transition: transform 0.1s;
+}
+
+.sp {
+  background: linear-gradient(
+      90deg,
+      #866ee7,
+      #ea60da,
+      #ed8f57,
+      #fbd41d,
+      #2cca91
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: block;
+}
+
+.rainbow-hover:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}
